@@ -50,3 +50,6 @@ THis project is licensed under the MIT License.
 
 ## Contacts
 For any questions or suggestions,please open an issue or contact mark.njau@student.moringaschool.com
+
+## Vercel Link
+[link](https://weather-app-project-eosin.vercel.app/)
