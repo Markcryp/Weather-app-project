@@ -41,6 +41,12 @@ document.addEventListener('DOMContentLoaded', () => {
             weatherDiv.textContent = 'Please enter a location';
         }
     });
+
+    locationInput.addEventListener('keyup', (event) => {
+        if (event.key === 'Enter') {
+            searchButton.click();
+        }
+    });
 });
 
 
@@ -105,58 +111,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// document.addEventListener("DOMContentLoaded", function () {
-//     const location = document.getElementById('location');
-//     const temperature = document.getElementById('temperature-div');
-//     const wind = document.getElementById('wind-div');
-//     const longitude = document.getElementById('longitude');
-//     const latitude = document.getElementById('latitude');   
-//     const searchButton = document.getElementById('search');
-//     const weatherList = document.getElementById('weather');
 
-// fetchCounties();
-
-// searchButton.addEventListener('click', () => fetchCounties());
-
-// function fetchCounties() {
-// fetch("http://localhost:3000/counties")
-//         .then(response => response.json())
-//         .then(data => {
-//             displayWeather(data);
-//         })
-//         .catch(error => console.log(error));
-// }
-    
-
-// function displayWeather(data) {
-//     weatherList.innerHTML = '';
-
-//     data.forEach(county => {
-//         const li = document.createElement("li");
-//         li.textContent = `${county.name}`;
-//         li.addEventListener('click', function () {
-//             displayCountyInformation(county);
-//         });
-//         // weatherList.appendChild(li);
-
-//         const weatherInfo = document.createElement("div");
-//         weatherInfo.innerHTML =`
-
-//         <p>Location: ${county.location}</p>
-//         <p>Temperature: ${county.temperature} degrees</p>
-//         <p>Wind: ${county.wind} km/h</p>
-//         <p>Longitude; ${county.longitude} S</p>
-//         <p>Latitude: ${county.latitude} N</p>
-//         `;
-//         weatherList.appendChild(weatherInfo);
-//     });
-// }
-// function displayCountyInformation(county) {
-    
-//     locationInput.value = county.name;
-//     temperature.textContent = `Temperature: ${county.temperature} degrees`;
-//     windDiv.textContent = `Wind: ${county.wind} km/h`;
-//     longitude.textContent = `Longitude: ${county.longitude} S`;
-//     latitude.textContent = `Latitude: ${county.latitude} N`;
-//   }
-// });
