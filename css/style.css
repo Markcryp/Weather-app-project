@@ -1,0 +1,63 @@
+body{
+    background: purple;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+#container {
+    background: rgba(255, 255, 255, 0.3);
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    height: 30%;
+    margin: 1em;
+}
+h2 {
+    color: aqua;
+    margin: 8px ;
+}
+input{
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-top: 20px;
+}
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+     cursor: pointer;
+    margin-top: 20px;
+    width: 100px;
+    font-size: 15px;
+}
+button:hover {
+color: green;
+}
+#temperature-div{
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+}
+#wind-div{
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+}
+#longitude{
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+}
+#latitude{
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+}
