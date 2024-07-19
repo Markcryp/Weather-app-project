@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     searchButton.addEventListener('click', () => {
         const location = locationInput.value.trim();
         if (location) {
-            fetch('http://localhost:3000/counties')
+            fetch('https://weather-backend-psi.vercel.app/counties')
                 .then(response => {
                     if (!response.ok) {
                         throw new Error('Network response was not ok');
